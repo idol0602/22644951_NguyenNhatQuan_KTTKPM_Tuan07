@@ -13,7 +13,6 @@ import java.util.Map;
 @AllArgsConstructor
 public class Cart implements Serializable {
     private String userId;
-    // ProductId to Quantity
     private Map<String, Integer> items = new HashMap<>();
 
     public void addItem(String productId, int quantity) {
